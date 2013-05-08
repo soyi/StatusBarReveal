@@ -60,27 +60,6 @@
     [status showDMStatusBarWithInfoArray:array];
 }
 
-- (void)aaa{
-    DMStatusBar *status = [DMStatusBar sharedInstance];
-    NSMutableDictionary *dic1 = [NSMutableDictionary dictionary];
-    [dic1 setObject:@"mail" forKey:@"icon"];
-    [dic1 setObject:@"duomi1" forKey:@"info"];
-    NSMutableDictionary *dic2 = [NSMutableDictionary dictionary];
-    [dic2 setObject:@"mail" forKey:@"icon"];
-    [dic2 setObject:@"duomi2" forKey:@"info"];
-    NSMutableDictionary *dic3 = [NSMutableDictionary dictionary];
-    [dic3 setObject:@"mail" forKey:@"icon"];
-    [dic3 setObject:@"duomi3" forKey:@"info"];
-    NSMutableDictionary *dic4 = [NSMutableDictionary dictionary];
-    [dic4 setObject:@"mail" forKey:@"icon"];
-    [dic4 setObject:@"duomi4" forKey:@"info"];
-    NSMutableDictionary *dic5 = [NSMutableDictionary dictionary];
-    [dic5 setObject:@"mail" forKey:@"icon"];
-    [dic5 setObject:@"duomi5" forKey:@"info"];
-    NSArray *array = [NSArray arrayWithObjects:dic1,dic2,dic3,dic4, nil];
-    [status showDMStatusBarWithInfoArray:array];
-}
-
 - (void)hide{
     DMStatusBar *status = [DMStatusBar sharedInstance];
     [status hideDMStatusBar];
