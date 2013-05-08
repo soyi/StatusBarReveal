@@ -7,6 +7,7 @@
 //
 
 #import "DMStatusBar.h"
+#import <QuartzCore/QuartzCore.h>
 
 static CGFloat moveDur = 0.3;
 static CGFloat stayDur = 1;
@@ -46,6 +47,17 @@ static CGFloat stayDur = 1;
         [self addElement];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [infos release];
+    infos = nil;
+    [elementView1 release];
+    elementView1 = nil;
+    [elementView2 release];
+    [elementView2 release];
+    [super dealloc];
 }
 
 - (void)addElement
@@ -155,7 +167,7 @@ static CGFloat stayDur = 1;
     }];
 }
 
-- (void)showDMStatusBarWithInfoArray:(NSArray *)infoArray
+- (void)displayDMStatusBarWithInfoArray:(NSArray *)infoArray
 {
     self.hidden = NO;
     for (id obj in infoArray)
@@ -168,13 +180,28 @@ static CGFloat stayDur = 1;
     }
 }
 
+- (void)cleanInfoArrayAndHideDMStatusBar
+{
+    [infos removeAllObjects];
+    [self resetArgument];
+}
+
 - (void)hideDMStatusBar
 {
     if (infos.count <= 0) {
-        self.hidden = YES;
-        [self setImageName:nil labelText:nil withView:elementView1];
-        [self setImageName:nil labelText:nil withView:elementView2];
+        [self resetArgument];
     }
+}
+
+- (void)resetArgument
+{
+    self.hidden = YES;
+    [elementView1.layer removeAllAnimations];
+    [elementView2.layer removeAllAnimations];
+    elementView1.frame = CGRectMake(0, 20, self.frame.size.width, self.frame.size.height);
+    elementView2.frame = CGRectMake(0, 20, self.frame.size.width, self.frame.size.height);
+    [self setImageName:nil labelText:nil withView:elementView1];
+    [self setImageName:nil labelText:nil withView:elementView2];
 }
 
 @end
