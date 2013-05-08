@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180B832C1739EFBE008E2683 /* DMStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B832B1739EFBE008E2683 /* DMStatusBar.m */; };
+		180B832E1739F081008E2683 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 180B832D1739F081008E2683 /* mail.png */; };
+		180B83341739F17B008E2683 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B83331739F17B008E2683 /* CalculatorViewController.m */; };
+		187959C417389773000B09C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187959C317389773000B09C9 /* UIKit.framework */; };
+		187959C617389773000B09C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187959C517389773000B09C9 /* Foundation.framework */; };
+		187959C817389773000B09C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187959C717389773000B09C9 /* CoreGraphics.framework */; };
+		187959CE17389773000B09C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 187959CC17389773000B09C9 /* InfoPlist.strings */; };
+		187959D017389773000B09C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187959CF17389773000B09C9 /* main.m */; };
+		187959D417389774000B09C9 /* CalculatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187959D317389774000B09C9 /* CalculatorAppDelegate.m */; };
+		187959D617389774000B09C9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 187959D517389774000B09C9 /* Default.png */; };
+		187959D817389774000B09C9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 187959D717389774000B09C9 /* Default@2x.png */; };
+		187959DA17389774000B09C9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 187959D917389774000B09C9 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		180B832A1739EFBE008E2683 /* DMStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMStatusBar.h; sourceTree = "<group>"; };
+		180B832B1739EFBE008E2683 /* DMStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMStatusBar.m; sourceTree = "<group>"; };
+		180B832D1739F081008E2683 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		180B83321739F17B008E2683 /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		180B83331739F17B008E2683 /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		187959C017389773000B09C9 /* Demo-StatusBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-StatusBar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		187959C317389773000B09C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		187959C517389773000B09C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		187959C717389773000B09C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		187959CB17389773000B09C9 /* Demo-StatusBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo-StatusBar-Info.plist"; sourceTree = "<group>"; };
+		187959CD17389773000B09C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		187959CF17389773000B09C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		187959D117389774000B09C9 /* Demo-StatusBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-StatusBar-Prefix.pch"; sourceTree = "<group>"; };
+		187959D217389774000B09C9 /* CalculatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorAppDelegate.h; sourceTree = "<group>"; };
+		187959D317389774000B09C9 /* CalculatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorAppDelegate.m; sourceTree = "<group>"; };
+		187959D517389774000B09C9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		187959D717389774000B09C9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		187959D917389774000B09C9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		187959BD17389773000B09C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187959C417389773000B09C9 /* UIKit.framework in Frameworks */,
+				187959C617389773000B09C9 /* Foundation.framework in Frameworks */,
+				187959C817389773000B09C9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		187959B717389773000B09C9 = {
+			isa = PBXGroup;
+			children = (
+				187959C917389773000B09C9 /* Demo-StatusBar */,
+				187959C217389773000B09C9 /* Frameworks */,
+				187959C117389773000B09C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		187959C117389773000B09C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				187959C017389773000B09C9 /* Demo-StatusBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		187959C217389773000B09C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				187959C317389773000B09C9 /* UIKit.framework */,
+				187959C517389773000B09C9 /* Foundation.framework */,
+				187959C717389773000B09C9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		187959C917389773000B09C9 /* Demo-StatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				187959D217389774000B09C9 /* CalculatorAppDelegate.h */,
+				187959D317389774000B09C9 /* CalculatorAppDelegate.m */,
+				180B832A1739EFBE008E2683 /* DMStatusBar.h */,
+				180B832B1739EFBE008E2683 /* DMStatusBar.m */,
+				180B83321739F17B008E2683 /* CalculatorViewController.h */,
+				180B83331739F17B008E2683 /* CalculatorViewController.m */,
+				180B832D1739F081008E2683 /* mail.png */,
+				187959CA17389773000B09C9 /* Supporting Files */,
+			);
+			path = "Demo-StatusBar";
+			sourceTree = "<group>";
+		};
+		187959CA17389773000B09C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				187959CB17389773000B09C9 /* Demo-StatusBar-Info.plist */,
+				187959CC17389773000B09C9 /* InfoPlist.strings */,
+				187959CF17389773000B09C9 /* main.m */,
+				187959D117389774000B09C9 /* Demo-StatusBar-Prefix.pch */,
+				187959D517389774000B09C9 /* Default.png */,
+				187959D717389774000B09C9 /* Default@2x.png */,
+				187959D917389774000B09C9 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		187959BF17389773000B09C9 /* Demo-StatusBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187959DD17389774000B09C9 /* Build configuration list for PBXNativeTarget "Demo-StatusBar" */;
+			buildPhases = (
+				187959BC17389773000B09C9 /* Sources */,
+				187959BD17389773000B09C9 /* Frameworks */,
+				187959BE17389773000B09C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo-StatusBar";
+			productName = "Demo-StatusBar";
+			productReference = 187959C017389773000B09C9 /* Demo-StatusBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		187959B817389773000B09C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Calculator;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = apple;
+			};
+			buildConfigurationList = 187959BB17389773000B09C9 /* Build configuration list for PBXProject "Demo-StatusBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 187959B717389773000B09C9;
+			productRefGroup = 187959C117389773000B09C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				187959BF17389773000B09C9 /* Demo-StatusBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		187959BE17389773000B09C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187959CE17389773000B09C9 /* InfoPlist.strings in Resources */,
+				187959D617389774000B09C9 /* Default.png in Resources */,
+				187959D817389774000B09C9 /* Default@2x.png in Resources */,
+				187959DA17389774000B09C9 /* Default-568h@2x.png in Resources */,
+				180B832E1739F081008E2683 /* mail.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		187959BC17389773000B09C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187959D017389773000B09C9 /* main.m in Sources */,
+				187959D417389774000B09C9 /* CalculatorAppDelegate.m in Sources */,
+				180B832C1739EFBE008E2683 /* DMStatusBar.m in Sources */,
+				180B83341739F17B008E2683 /* CalculatorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		187959CC17389773000B09C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187959CD17389773000B09C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		187959DB17389774000B09C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_STRICT_ALIASING = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		187959DC17389774000B09C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_STRICT_ALIASING = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		187959DE17389774000B09C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo-StatusBar/Demo-StatusBar-Prefix.pch";
+				INFOPLIST_FILE = "Demo-StatusBar/Demo-StatusBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		187959DF17389774000B09C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo-StatusBar/Demo-StatusBar-Prefix.pch";
+				INFOPLIST_FILE = "Demo-StatusBar/Demo-StatusBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		187959BB17389773000B09C9 /* Build configuration list for PBXProject "Demo-StatusBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187959DB17389774000B09C9 /* Debug */,
+				187959DC17389774000B09C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187959DD17389774000B09C9 /* Build configuration list for PBXNativeTarget "Demo-StatusBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187959DE17389774000B09C9 /* Debug */,
+				187959DF17389774000B09C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 187959B817389773000B09C9 /* Project object */;
+}
