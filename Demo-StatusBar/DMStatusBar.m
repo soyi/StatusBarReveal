@@ -16,7 +16,6 @@ static CGFloat stayDur = 1;
     UIView *elementView1;
     UIView *elementView2;
     BOOL canAnimation;
-    NSInteger num;
     NSMutableArray *infos;
 }
 @end
@@ -99,6 +98,7 @@ static CGFloat stayDur = 1;
 - (void)startAnimationWithView1:(UIView *)view1 view2:(UIView *)view2
 {
     canAnimation = NO;
+    [self setImageName:nil labelText:nil withView:view1];
     if (infos.count > 0) {
         NSDictionary *dic1 = [infos objectAtIndex:0];
         [self setImageName:[dic1 objectForKey:@"icon"] labelText:[dic1 objectForKey:@"info"] withView:view1];
@@ -106,7 +106,7 @@ static CGFloat stayDur = 1;
     }
     else{
         canAnimation = YES;
-        [self performSelector:@selector(hideDMStatusBar) withObject:nil afterDelay:stayDur];
+        [self performSelector:@selector(hideDMStatusBar) withObject:nil afterDelay:moveDur];
         return;
     }
     view1.frame = CGRectMake(0, 20, self.frame.size.width, self.frame.size.height);
@@ -122,26 +122,35 @@ static CGFloat stayDur = 1;
                 NSDictionary *dic2 = [infos objectAtIndex:0];
                 [self setImageName:[dic2 objectForKey:@"icon"] labelText:[dic2 objectForKey:@"info"] withView:view2];
                 [infos removeObjectAtIndex:0];
-            }
-            [UIView animateWithDuration:moveDur animations:^{
-                view1.frame = CGRectMake(0, -20, self.bounds.size.width, self.bounds.size.height);
-                view2.frame = self.bounds;
-            } completion:^(BOOL finished) {
-                view1.frame = CGRectMake(0, 20, self.frame.size.width, self.frame.size.height);
-                [self setImageName:nil labelText:nil withView:view1];
-                [UIView animateWithDuration:stayDur animations:^{
-                    view2.frame = CGRectMake(0, 0.01, self.bounds.size.width, self.bounds.size.height);
+                [UIView animateWithDuration:moveDur animations:^{
+                    view1.frame = CGRectMake(0, -20, self.bounds.size.width, self.bounds.size.height);
+                    view2.frame = self.bounds;
                 } completion:^(BOOL finished) {
-                    [self startAnimationWithView1:elementView1 view2:elementView2];
-                    [UIView animateWithDuration:moveDur animations:^{
-                        view2.frame = CGRectMake(0, -20, self.bounds.size.width, self.bounds.size.height);
+                    view1.frame = CGRectMake(0, 20, self.frame.size.width, self.frame.size.height);
+                    [self setImageName:nil labelText:nil withView:view1];
+                    [UIView animateWithDuration:stayDur animations:^{
+                        view2.frame = CGRectMake(0, 0.01, self.bounds.size.width, self.bounds.size.height);
                     } completion:^(BOOL finished) {
-                        if (infos.count <= 0) {
-                            [self performSelector:@selector(hideDMStatusBar) withObject:nil afterDelay:stayDur+moveDur];
-                        }
+                        [self startAnimationWithView1:elementView1 view2:elementView2];
+                        [UIView animateWithDuration:moveDur animations:^{
+                            view2.frame = CGRectMake(0, -20, self.bounds.size.width, self.bounds.size.height);
+                        } completion:^(BOOL finished) {
+                            if (infos.count <= 0) {
+                                [self performSelector:@selector(hideDMStatusBar) withObject:nil afterDelay:stayDur+moveDur];
+                            }
+                        }];
                     }];
                 }];
-            }];
+            }
+            else{
+                [UIView animateWithDuration:moveDur animations:^{
+                    view1.frame = CGRectMake(0, -20, self.bounds.size.width, self.bounds.size.height);
+                } completion:^(BOOL finished) {
+                    view1.frame = CGRectMake(0, 20, self.frame.size.width, self.frame.size.height);
+                    [self setImageName:nil labelText:nil withView:view1];
+                    [self startAnimationWithView1:elementView1 view2:elementView2];
+                }];
+            }
         }];
     }];
 }
@@ -164,8 +173,8 @@ static CGFloat stayDur = 1;
     if (infos.count <= 0) {
         self.hidden = YES;
         [self setImageName:nil labelText:nil withView:elementView1];
+        [self setImageName:nil labelText:nil withView:elementView2];
     }
-    
 }
 
 @end
